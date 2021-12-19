@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont > *{
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+}
+.action-btn-cont{
+    height: 3.5rem;
+    width : 8rem;
+    background-color: #3d3d3d;
+    display: flex;
+}
+.action-btn-cont > *{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    color: #d1d8e0;
+}
+.color{
+    height: 1.3rem;
+    width: 2.6rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+
+}
+.lightpink{
+    background-color: lightpink;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.black{
+    background-color: black;
+}
+
+.add-btn:hover{
+    background-color: lightgreen;
+}
+.remove-btn:hover{
+    background-color: crimson;
+}
+
+/* now performing the modal container styling */
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;/*to amke this entity seperate from document flow*/
+    left: calc((100vw - 45vw) / 2);
+    top: calc((100vh - 50vh) /2); /*to make it in center despite the device*/
+    display: none; /*by default marking as none
+    to amke sure not shown without if clicker .disply = flex
+    else nonde handled in scipting part*/
+
+
+}
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #d2dae2;
+    padding: 2rem;
+    font-size: 2rem;
+    resize: none;/*if not mention others field move*/
+}
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priority-color{
+    height: 3.5rem;
+    width: 55%;
+    border-radius: 3px;
+}
+
+.border{
+    border: 5px solid lightsalmon;
+}
+/* .border:hover{
+    background-color:aquamarine;
+} */
+.ticket-cont{
+    height: 13rem;
+    width: 17rem;
+    background-color: lightyellow;
+}
+.ticket-color{
+    height: 1rem;
+    width: 17rem;
+}
+.ticket-id{
+    height: 2rem;
+    padding:  0.4rem;
+}
+.task-area{
+    height: calc(100% - 1rem - 2rem - 2rem);
+    padding:  0.4rem;
+    outline: none;
+}
+.ticket-lock{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    color: #a5b1c2;
+}
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
